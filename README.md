@@ -34,7 +34,7 @@ Bill of Materials
 
 ![linkage_joint](images/linkage_joint.png)
 
-
+![finger](images/finger.png)
 
 ### Part III. Gripper
 
