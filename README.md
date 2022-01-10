@@ -30,7 +30,15 @@ Bill of Materials
 
 ![actuator_module](images/actuator-module.png)
 
+### Part II. Finger $\times 2$
 
+
+
+### Part III. Gripper Shell
+
+
+
+### Part IV. Wiring
 
 
 
