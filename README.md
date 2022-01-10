@@ -32,13 +32,19 @@ Bill of Materials
 
 ### Part II. Finger $\times 2$
 
+![linkage_joint](images/linkage_joint.png)
 
 
-### Part III. Gripper Shell
+
+### Part III. Gripper
 
 ![gripper_shell](images/gripper_shell.png)
 
-### Part IV. Wiring
+### Part IV. Mounting
+
+
+
+### Part V. 
 
 
 
