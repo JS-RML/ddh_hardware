@@ -36,7 +36,7 @@ Bill of Materials
 
 ### Part III. Gripper Shell
 
-
+![gripper_shell](images/gripper_shell.png)
 
 ### Part IV. Wiring
 
