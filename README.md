@@ -22,6 +22,18 @@ Bill of Materials
 
 
 
+### Part I. Actuator Module $\times 4$
+
+![motor_with_magnet](images/motor_with_magnet.png)
+
+![motor-plate](images/motor-plate.png)
+
+![actuator_module](images/actuator-module.png)
+
+
+
+
+
 ## Configuration and Calibration
 
 ![schematics](images/DDH_schematic.png)
