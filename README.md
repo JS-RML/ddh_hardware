@@ -40,6 +40,8 @@ Bill of Materials
 
 ![gripper_shell](images/gripper_shell.png)
 
+![gripper](images/gripper.png)
+
 ### Part IV. Mounting
 
 
