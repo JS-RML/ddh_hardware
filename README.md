@@ -44,7 +44,7 @@ Bill of Materials
 
 
 
-### Part V. 
+### Part V. Wiring
 
 
 
@@ -82,3 +82,45 @@ geometry:
   r_max_offset: 1 # r_max = l1 + l2 - r_max_offset
 ```
 
+### Step 0. Fix Reference Frames 
+
+
+
+### Step 1. ODrive Calibration
+
+
+
+### Step 2. Encoder Offset Calibration
+
+The following values in the configuration will be calibrated in this step
+
+- `/motors/R0/offset`
+- `/motors/R1/offset`
+- `/motors/L0/offset`
+- `/motors/L1/offset`
+
+
+
+### Step 3. Rotation Direction Calibration
+
+The following values in the configuration will be calibrated in this step
+
+- `/motors/R0/dir`
+- `/motors/R1/dir`
+- `/motors/L0/dir`
+- `/motors/L1/dir`
+
+
+
+### Step 4. Linkage Calibration
+
+The following values in the configuration will be calibrated in this step
+
+- `/linkages/R0`
+- `/linkages/R1`
+- `/linkages/L0`
+- `/linkages/L1`
+
+
+
+### Step 5. Configure Gripper Geometry
