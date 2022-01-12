@@ -72,7 +72,7 @@ The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptiv
 
 ![drag_cable](images/wiring.png)
 
-
+![wireing_power](images/wiring-power.png)
 
 
 
