@@ -70,6 +70,10 @@ The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptiv
 
 ### Part V. Wiring
 
+![drag_cable](images/wiring.png)
+
+
+
 
 
 ## Configuration and Calibration
@@ -108,6 +112,10 @@ geometry:
 
 ### Step 0. Fix Reference Frames 
 
+There are two ways to mount the gripper on the robot arm. They are equivalent as long as you keep it consistent.
+
+
+
 
 
 ### Step 1. ODrive Calibration
@@ -122,6 +130,14 @@ The following values in the configuration will be calibrated in this step
 - `/motors/R1/offset`
 - `/motors/L0/offset`
 - `/motors/L1/offset`
+
+
+
+`AS5048A` encoder used in this gripper is a Hall effect magnetic encoder. It is used together with a diametrically magnatized magnet. This magnet has a intrinsic direction not visiable to the naked eye, but can be seen through a [magnetic field viewing film](https://en.wikipedia.org/wiki/Magnetic_field_viewing_film), as shown below. This step will calibrate the direction of the magnet relative to the rotor.
+
+
+
+![magnet](images/magnet.png)
 
 
 
