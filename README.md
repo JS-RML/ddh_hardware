@@ -22,7 +22,6 @@ The repo contains the hardware design and documentation of our in-house 2-finger
     - [Label Components]()
     - [Calibrate ODrive]()
     - [Calibrate Motor Offset]()
-    
   - [After Assembly]()
     - [Calibrate Motor Direction]()
     - [Calibrate Linkages]()
