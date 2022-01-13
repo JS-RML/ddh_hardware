@@ -8,24 +8,24 @@ The repo contains the hardware design and documentation of our in-house 2-finger
 
 # Table of Contents
 
-- [Bill of Materials (BOM)]()
-  - [Purchase]()
-  - [3D Printing]()
-- [Assembly]()
-  - [Actuator]()
-  - [Finger]()
-  - [Gripper]()
-  - [Mounting]()
-  - [Wiring]()
-- [Configuration and Calibration]()
-  - [Before Assembly]()
-    - [Label Components]()
-    - [Calibrate ODrive]()
-    - [Calibrate Motor Offset]()
-  - [After Assembly]()
-    - [Calibrate Motor Direction]()
-    - [Calibrate Linkages]()
-    - [Configure Gripper Geometry]()
+- [Bill of Materials (BOM)](#bill-of-materials-(BOM))
+  - [Purchase](#purchase)
+  - [3D Printing](#3d-printing)
+- [Assembly](#assembly)
+  - [Actuator ⨉4](#actuator-⨉4)
+  - [Finger ⨉2](#finger-⨉2)
+  - [Gripper](#gripper)
+  - [Mounting](#mounting)
+  - [Wiring](#wiring)
+- [Configuration and Calibration](#configuratio- and-calibration)
+  - [Before Assembly](#before-assembly)
+    - [Label Components](#label-components)
+    - [Calibrate ODrive](#calibrate-odrive)
+    - [Calibrate Motor Offset](#calibrate-motor-offset)
+  - [After Assembly](#after-assembly)
+    - [Calibrate Motor Direction](#calibrate-motor-direction)
+    - [Calibrate Linkages](#calibrate-linkages)
+    - [Configure Gripper Geometry](#configure-gripper-geometry)
 
 
 
@@ -33,7 +33,7 @@ The repo contains the hardware design and documentation of our in-house 2-finger
 
 
 
-### Bill of Materials
+### Purchase
 
 - [ODrive 3.6-56V](https://odriverobotics.com/shop/odrive-v36) ⨉2
 - [T-Motor GB54-2](https://store.tmotor.com/goods.php?id=445) ⨉4
