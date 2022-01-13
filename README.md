@@ -12,12 +12,12 @@ The repo contains the hardware design and documentation of our in-house 2-finger
   - [Purchase](#purchase)
   - [3D Printing](#3d-printing)
 - [Assembly](#assembly)
-  - [Actuator ⨉4](#actuator-⨉4)
-  - [Finger ⨉2](#finger-⨉2)
+  - [Actuator ⨉4](#actuator)
+  - [Finger ⨉2](#finger)
   - [Gripper](#gripper)
   - [Mounting](#mounting)
   - [Wiring](#wiring)
-- [Configuration and Calibration](#configuratio- and-calibration)
+- [Configuration and Calibration](#configuratio-and-calibration)
   - [Before Assembly](#before-assembly)
     - [Label Components](#label-components)
     - [Calibrate ODrive](#calibrate-odrive)
@@ -71,6 +71,8 @@ The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptiv
 
 
 
+<a href="#actuator"/>
+
 ## Actuator ⨉4
 
 ![motor_with_magnet](images/motor_with_magnet.png)
@@ -78,6 +80,8 @@ The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptiv
 ![motor-plate](images/motor-plate.png)
 
 ![actuator_module](images/actuator-module.png)
+
+<a href="#finger"/>
 
 ## Finger ⨉2
 
