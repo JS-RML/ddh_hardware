@@ -71,7 +71,7 @@ The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptiv
 
 # Assembly
 
-Note that after assemblig the four actuator modules, you should first go to [the wiring step](#wiring) and construct the encoder cable and power cables, then complete the [before-assembly calibration steps](#before-assembly). These calibration steps require free movement of each indivisual motor. However,  the gripper is a parallel mechanism, the motors won't be able to move freely after full assembly.
+Note that after assemblig the four actuator modules, you should first go to [the wiring step](#wiring) and construct the encoder cable and power cables, then complete the [before-assembly calibration steps](#before-assembly). These calibration steps require free movement of each individual motor. However,  the gripper is a parallel mechanism, the motors won't be able to move freely after full assembly.
 
 <a name="actuator"></a>
 
