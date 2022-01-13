@@ -8,7 +8,7 @@ The repo contains the hardware design and documentation of our in-house 2-finger
 
 # Table of Contents
 
-- [Bill of Materials (BOM)](#bill-of-materials-(BOM))
+- [Bill of Materials (BOM)](#bom)
   - [Purchase](#purchase)
   - [3D Printing](#3d-printing)
 - [Assembly](#assembly)
@@ -28,6 +28,8 @@ The repo contains the hardware design and documentation of our in-house 2-finger
     - [Configure Gripper Geometry](#configure-gripper-geometry)
 
 
+
+<a name="bom"></a>
 
 # Bill of Materials (BOM)
 
