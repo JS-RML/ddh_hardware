@@ -6,7 +6,7 @@ The repo contains the hardware design and documentation of our in-house 2-finger
 
 
 
-## Table of Contents
+# Table of Contents
 
 - [Bill of Materials (BOM)]()
   - [Purchase]()
@@ -29,11 +29,11 @@ The repo contains the hardware design and documentation of our in-house 2-finger
 
 
 
-## Fabrication
+# Bill of Materials (BOM)
 
 
 
-Bill of Materials
+### Bill of Materials
 
 - [ODrive 3.6-56V](https://odriverobotics.com/shop/odrive-v36) ⨉2
 - [T-Motor GB54-2](https://store.tmotor.com/goods.php?id=445) ⨉4
@@ -48,7 +48,7 @@ Bill of Materials
 
 
 
-3D Printing 
+### 3D Printing 
 
 - Magnet Holder ⨉4
 - Motor Plate ⨉4
@@ -67,7 +67,11 @@ The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptiv
 
 
 
-### Part I. Actuator ⨉4
+# Assembly
+
+
+
+## Actuator ⨉4
 
 ![motor_with_magnet](images/motor_with_magnet.png)
 
@@ -75,63 +79,53 @@ The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptiv
 
 ![actuator_module](images/actuator-module.png)
 
-### Part II. Finger ⨉2
+## Finger ⨉2
 
 ![linkage_joint](images/linkage_joint.png)
 
 ![finger](images/finger.png)
 
-### Part III. Gripper
+## Gripper
 
 ![gripper_shell](images/gripper_shell.png)
 
 ![gripper](images/gripper.png)
 
-### Part IV. Mounting
+## Mounting
 
 ![mounting](images/mounting.png)
 
 ![gripper_mounted](images/gripper_mounted.png)
 
-### Part V. Wiring
+## Wiring
 
 ![drag_cable](images/wiring.png)
 
 ![wireing_power](images/wiring-power.png)
 
+# Configuration and Calibration
 
 
-## Configuration and Calibration
 
-![ref_frame](images/ref_frame.png)
+## Before Assembly
 
-```yaml
-motors:
-  R0:
-    offset: 0.30837726593
-    dir: -1
-  R1:
-    offset: -0.153398513794
-    dir: 1
-  L0:
-    offset: -0.343551635742
-    dir: -1
-  L1:
-    offset: -0.0488748550415
-    dir: 1
-```
 
-### Step 0. Fix Reference Frames 
+
+### Label Components 
 
 There are two ways to mount the gripper on the robot arm. They are equivalent as long as you keep it consistent.
 
 
 
-### Step 1. ODrive Calibration
+![ref_frame](images/ref_frame.png)
 
 
 
-### Step 2. Encoder Offset Calibration
+### Calibrate ODrive
+
+
+
+### Calibrate Motor Offset 
 
 The following values in the configuration will be calibrated in this step
 
@@ -150,7 +144,11 @@ The following values in the configuration will be calibrated in this step
 
 
 
-### Step 3. Rotation Direction Calibration
+## After Assembly
+
+
+
+### Calibrate Motor Direction
 
 The following values in the configuration will be calibrated in this step
 
@@ -161,7 +159,7 @@ The following values in the configuration will be calibrated in this step
 
 
 
-### Step 4. Linkage Calibration
+### Calibrate Linkages
 
 The following values in the configuration will be calibrated in this step
 
@@ -180,7 +178,7 @@ linkages:
 
 
 
-### Step 5. Configure Gripper Geometry
+### Configure Gripper Geometry
 
 ![geometry](images/ddh_geometry.png)
 
