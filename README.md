@@ -2,7 +2,7 @@
 
 The repo contains the hardware design and documentation of our in-house 2-finger 4-DoF direct-dirve gripper.
 
-
+![ddh](/Users/sheep/Code/ddh_hardware/images/ddh.gif)
 
 ## Fabrication
 
