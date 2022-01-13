@@ -71,7 +71,7 @@ The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptiv
 
 # Assembly
 
-
+Note that after assemblig the four actuator modules, you should first go to [the wiring step](#wiring) and construct the encoder cable and power cables, then complete the [before-assembly calibration steps](#before-assembly). These calibration steps require free movement of each indivisual motor. However,  the gripper is a parallel mechanism, the motors won't be able to move freely after full assembly.
 
 <a name="actuator"></a>
 
@@ -105,7 +105,24 @@ The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptiv
 
 ## Wiring
 
+In this step, you need to connect the actuators to the ODrive boards. Each actuator has an encoder port and a 3-phase power port. Both need to be connected.
+
+For the encoder connection, you need to construct a encoder cable accroding the schematics below. This cable is quite tricky to make. Test the connectivity and resistance of each connection afterwards to make sure the cable is soldered properly. It is also recommanded to physically label each connector with its designated identifier.
+
 ![drag_cable](images/wiring.png)
+
+Plug-in the encoder cable to the corresponding actuators. There is only one corret orientation for the plugs. Connect the other end of the encoder cable to the corresponding ODrive pins.
+
+For the power connection, connect each actuator to its designeated ODrive axis. 
+
+| Actuator | ODrive | Axis |
+|----|------|-----|
+| R0 | ODrive_R | M0 |
+| R1 | ODrive_R | M1 |
+| L0 | ODrive_L | M0 |
+| L1 | ODrive_L | M1 |
+
+Keep the 3-phase connection consistent following the convention shown below.
 
 ![wireing_power](images/wiring-power.png)
 
