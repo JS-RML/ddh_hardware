@@ -10,14 +10,14 @@ The repo contains the hardware design and documentation of our in-house 2-finger
 
 Bill of Materials
 
-- [ODrive 3.6-56V](https://odriverobotics.com/shop/odrive-v36) $\times 2$
-- [T-Motor GB54-2](https://store.tmotor.com/goods.php?id=445) $\times 4$
-- [AS5048A Encoder + Diametrical Magenet](https://item.taobao.com/item.htm?id=619004953504) $\times 4$
-- [Bearing - outer-diameter = 10mm, inner-diameter = 6mm](https://item.taobao.com/item.htm?id=649671875461) $\times 12$
-- [Dowel Pin - diameter = 6mm, length = 10mm](https://detail.tmall.com/item.htm?id=522002486638) $\times 6$
-- [14-Core Shielded Cable TRVVSP4](https://detail.tmall.com/item.htm?id=649477061772) $\times 2\ \text{meters}$
-- [MX1.25-6P 150mm Cable](https://item.taobao.com/item.htm?id=607231799768) $\times 4$
-- [AMASS Braided 3-Phase 90cm Cable](https://item.taobao.com/item.htm?id=520248392055) $\times 8$
+- [ODrive 3.6-56V](https://odriverobotics.com/shop/odrive-v36) ⨉2
+- [T-Motor GB54-2](https://store.tmotor.com/goods.php?id=445) ⨉4
+- [AS5048A Encoder + Diametrical Magenet](https://item.taobao.com/item.htm?id=619004953504) ⨉4
+- [Bearing - outer-diameter = 10mm, inner-diameter = 6mm](https://item.taobao.com/item.htm?id=649671875461) ⨉12
+- [Dowel Pin - diameter = 6mm, length = 10mm](https://detail.tmall.com/item.htm?id=522002486638) ⨉6
+- [14-Core Shielded Cable TRVVSP4](https://detail.tmall.com/item.htm?id=649477061772) ⨉2 meters
+- [MX1.25-6P 150mm Cable](https://item.taobao.com/item.htm?id=607231799768) ⨉4
+- [AMASS Braided 3-Phase 90cm Cable](https://item.taobao.com/item.htm?id=520248392055) ⨉8
 - Mounting Couplers (*)
 - Various Fasteners from M2 to M4
 
@@ -25,14 +25,14 @@ Bill of Materials
 
 3D Printing 
 
-- Magnet Holder $\times 4$
-- Motor Plate $\times 4$
-- Proximal Link $\times 4$
-- Distal Link $\times 2$
-- Distal Tip Link $\times 2$
-- Finger Tip $\times 2$
-- Actuator Mount $\times 1$
-- Coupler $\times 1$
+- Magnet Holder ⨉4
+- Motor Plate ⨉4
+- Proximal Link ⨉4
+- Distal Link ⨉2
+- Distal Tip Link ⨉2
+- Finger Tip ⨉2
+- Actuator Mount ⨉1
+- Coupler ⨉1
 
 
 
@@ -42,7 +42,7 @@ The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptiv
 
 
 
-### Part I. Actuator Module $\times 4$
+### Part I. Actuator ⨉4
 
 ![motor_with_magnet](images/motor_with_magnet.png)
 
@@ -50,7 +50,7 @@ The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptiv
 
 ![actuator_module](images/actuator-module.png)
 
-### Part II. Finger $\times 2$
+### Part II. Finger ⨉2
 
 ![linkage_joint](images/linkage_joint.png)
 
