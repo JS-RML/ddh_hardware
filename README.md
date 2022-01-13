@@ -4,6 +4,32 @@ The repo contains the hardware design and documentation of our in-house 2-finger
 
 ![ddh](images/ddh.gif)
 
+
+
+## Table of Contents
+
+- [Bill of Materials (BOM)]()
+  - [Purchase]()
+  - [3D Printing]()
+- [Assembly]()
+  - [Actuator]()
+  - [Finger]()
+  - [Gripper]()
+  - [Mounting]()
+  - [Wiring]()
+- [Configuration and Calibration]()
+  - [Before Assembly]()
+    - [Label Components]()
+    - [Calibrate ODrive]()
+    - [Calibrate Motor Offset]()
+    
+  - [After Assembly]()
+    - [Calibrate Motor Direction]()
+    - [Calibrate Linkages]()
+    - [Configure Gripper Geometry]()
+
+
+
 ## Fabrication
 
 
