@@ -78,7 +78,7 @@ The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptiv
 
 ## Configuration and Calibration
 
-![schematics](images/DDH_schematic.png)
+![ref_frame](images/ref_frame.png)
 
 ```yaml
 motors:
@@ -94,27 +94,11 @@ motors:
   L1:
     offset: -0.0488748550415
     dir: 1
-linkages:
-  R0: -45
-  R1: 45
-  L0: 45
-  L1: -45
-geometry:
-  l1: 50 # length of proximal links
-  l2: 35 # length of distal links
-  beta: 150 # angle from l2 to finger surface 
-  l3: 80.04 # distance from distal joint to fingertip
-  gamma: 160.66 # angle from l2 to fingertip
-  # r: distance of distal joint to motor
-  r_min_offset: 0 # r_min = sqrt(l1**2 - l2**2) + r_min_offset
-  r_max_offset: 1 # r_max = l1 + l2 - r_max_offset
 ```
 
 ### Step 0. Fix Reference Frames 
 
 There are two ways to mount the gripper on the robot arm. They are equivalent as long as you keep it consistent.
-
-
 
 
 
@@ -161,6 +145,29 @@ The following values in the configuration will be calibrated in this step
 - `/linkages/L0`
 - `/linkages/L1`
 
+```yaml
+linkages:
+  R0: -45
+  R1: 45
+  L0: 45
+  L1: -45
+```
+
 
 
 ### Step 5. Configure Gripper Geometry
+
+![geometry](images/ddh_geometry.png)
+
+```yaml
+geometry:
+  l1: 50 # length of proximal links
+  l2: 35 # length of distal links
+  beta: 150 # angle from l2 to finger surface 
+  l3: 80.04 # distance from distal joint to fingertip
+  gamma: 160.66 # angle from l2 to fingertip
+  # r: distance of distal joint to motor
+  r_min_offset: 0 # r_min = sqrt(l1**2 - l2**2) + r_min_offset
+  r_max_offset: 1 # r_max = l1 + l2 - r_max_offset
+```
+
