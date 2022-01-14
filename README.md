@@ -151,9 +151,9 @@ The following values in the configuration will be calibrated in this step
 
 
 
-![](/Users/sheep/Code/ddh_hardware/images/motor-calib-stand.png)
+![calibration-stand](images/motor-calib-stand.png)
 
-![](/Users/sheep/Code/ddh_hardware/images/calib-zero.png)
+![zero-stop](images/calib-zero.png)
 
 # Gripper
 
