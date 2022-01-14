@@ -151,12 +151,9 @@ The following values in the configuration will be calibrated in this step
 
 
 
-`AS5048A` encoder used in this gripper is a Hall effect magnetic encoder. It is used together with a diametrically magnatized magnet. This magnet has a intrinsic direction not visiable to the naked eye, but can be seen through a [magnetic field viewing film](https://en.wikipedia.org/wiki/Magnetic_field_viewing_film), as shown below. This step will calibrate the direction of the magnet relative to the rotor.
+![](/Users/sheep/Code/ddh_hardware/images/motor-calib-stand.png)
 
-
-![magnet](images/magnet.png)
-
-
+![](/Users/sheep/Code/ddh_hardware/images/calib-zero.png)
 
 # Gripper
 
