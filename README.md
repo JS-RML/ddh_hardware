@@ -8,30 +8,36 @@ The repo contains the hardware design and documentation of our in-house 2-finger
 
 # Table of Contents
 
-- [Bill of Materials (BOM)](#bom)
-  - [Purchase](#purchase)
-  - [3D Printing](#3d-printing)
-- [Assembly](#assembly)
-  - [Actuator ⨉4](#actuator)
-  - [Finger ⨉2](#finger)
-  - [Gripper](#gripper)
-  - [Mounting](#mounting)
+- [Preparation](#preparation)
+  - [Bill of Materials (BOM)](#bom)
+    - [Purchase](#purchase)
+    - [3D Printing](#3d-printing)
+    - [Mounting]()
+  - [Label Components]()
+- [Actuators](#actuators)
+  - [Actuator Assembly ⨉4](#assemble-actuators)
   - [Wiring](#wiring)
-- [Configuration and Calibration](#configuration-and-calibration)
-  - [Before Assembly](#before-assembly)
-    - [Label Components](#label-components)
-    - [Calibrate ODrive](#calibrate-odrive)
-    - [Calibrate Motor Offset](#calibrate-motor-offset)
-  - [After Assembly](#after-assembly)
+    - [Encoder Connection](#encoder-connection)
+    - [Power Connection](#power-connection)
+  - [Actuator Calibration](#actuator-calibration)
+    - [Calibrate ODrives](#calibrate-odrives)
+    - [Calibrate Encoders](#calibrate-encoders)
+- [Gripper](#Gripper)
+  - [Finger Assembly ⨉2](#finger)
+  - [Gripper Assembly](#gripper-assembly)
+  - [Mounting](#mounting)
+  - [Gripper Calibration](#configuration-and-calibration)
     - [Calibrate Motor Direction](#calibrate-motor-direction)
     - [Calibrate Linkages](#calibrate-linkages)
     - [Configure Gripper Geometry](#configure-gripper-geometry)
 
 
 
-<a name="bom"></a>
+# Preparation
 
-# Bill of Materials (BOM)
+
+<a name="bom"></a>
+## Bill of Materials (BOM)
 
 
 
@@ -63,19 +69,31 @@ The repo contains the hardware design and documentation of our in-house 2-finger
 
 
 
-(*) Mounting Footnotes
+
+### Mounting (\*) 
 
 The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptive robot gripper and Universal robhot UR10 (50mm PCD with 4 x M6). You will need to design your own coupler if you use other robot models. 
 
 
 
-# Assembly
 
-Note that after assemblig the four actuator modules, you should first go to [the wiring step](#wiring) and construct the encoder cable and power cables, then complete the [before-assembly calibration steps](#before-assembly). These calibration steps require free movement of each individual motor. However,  the gripper is a parallel mechanism, the motors won't be able to move freely after full assembly.
+## Label Components
 
-<a name="actuator"></a>
 
-## Actuator ⨉4
+There are two ways to mount the gripper on the robot arm. They are equivalent as long as you keep it consistent.
+
+
+
+![ref_frame](images/ref_frame.png)
+
+
+
+# Actuators
+
+
+<a name="assemble-actuator"></a>
+## Actuator Assembly ⨉4
+
 
 ![motor_with_magnet](images/motor_with_magnet.png)
 
@@ -83,35 +101,21 @@ Note that after assemblig the four actuator modules, you should first go to [the
 
 ![actuator_module](images/actuator-module.png)
 
-<a name="finger"></a>
-
-## Finger ⨉2
-
-![linkage_joint](images/linkage_joint.png)
-
-![finger](images/finger.png)
-
-## Gripper
-
-![gripper_shell](images/gripper_shell.png)
-
-![gripper](images/gripper.png)
-
-## Mounting
-
-![mounting](images/mounting.png)
-
-![gripper_mounted](images/gripper_mounted.png)
 
 ## Wiring
 
 In this step, you need to connect the actuators to the ODrive boards. Each actuator has an encoder port and a 3-phase power port. Both need to be connected.
+
+
+### Encoder Connection
 
 For the encoder connection, you need to construct a encoder cable accroding the schematics below. This cable is quite tricky to make. Test the connectivity and resistance of each connection afterwards to make sure the cable is soldered properly. It is also recommanded to physically label each connector with its designated identifier.
 
 ![drag_cable](images/wiring.png)
 
 Plug-in the encoder cable to the corresponding actuators. There is only one corret orientation for the plugs. Connect the other end of the encoder cable to the corresponding ODrive pins.
+
+### Power Connection
 
 For the power connection, connect each actuator to its designeated ODrive axis. 
 
@@ -126,29 +130,17 @@ Keep the 3-phase connection consistent following the convention shown below.
 
 ![wireing_power](images/wiring-power.png)
 
-# Configuration and Calibration
+
+
+## Actuator Calibration
 
 
 
-## Before Assembly
+### Calibrate ODrives
 
 
 
-### Label Components 
-
-There are two ways to mount the gripper on the robot arm. They are equivalent as long as you keep it consistent.
-
-
-
-![ref_frame](images/ref_frame.png)
-
-
-
-### Calibrate ODrive
-
-
-
-### Calibrate Motor Offset 
+### Calibrate Encoders
 
 The following values in the configuration will be calibrated in this step
 
@@ -162,12 +154,36 @@ The following values in the configuration will be calibrated in this step
 `AS5048A` encoder used in this gripper is a Hall effect magnetic encoder. It is used together with a diametrically magnatized magnet. This magnet has a intrinsic direction not visiable to the naked eye, but can be seen through a [magnetic field viewing film](https://en.wikipedia.org/wiki/Magnetic_field_viewing_film), as shown below. This step will calibrate the direction of the magnet relative to the rotor.
 
 
-
 ![magnet](images/magnet.png)
 
 
 
-## After Assembly
+# Gripper
+
+<a name="finger"></a>
+
+## Finger Assembly ⨉2
+
+![linkage_joint](images/linkage_joint.png)
+
+![finger](images/finger.png)
+
+
+## Gripper Assembly
+
+![gripper_shell](images/gripper_shell.png)
+
+![gripper](images/gripper.png)
+
+## Mounting
+
+![mounting](images/mounting.png)
+
+![gripper_mounted](images/gripper_mounted.png)
+
+
+
+## Gripper Calibration
 
 
 
