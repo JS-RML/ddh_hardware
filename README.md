@@ -168,18 +168,27 @@ Keep the 3-phase connection consistent following the convention shown below.
 
 ### Calibrate Encoders
 
-The following values in the configuration will be calibrated in this step
-
-- `/motors/R0/offset`
-- `/motors/R1/offset`
-- `/motors/L0/offset`
-- `/motors/L1/offset`
-
-
+Here we calibrate the zero position of the magnet. Mount the actuator on the calibration stand and install the calibration arm onto the actuator following the diagram
 
 ![calibration-stand](images/motor-calib-stand.png)
 
+Execute the following command to show real-time reading from the encoders.
+```shell
+python3 -m pyddh.encoder_printer
+```
+
+Put the motor into zero position as show in the diagram below. The ports of the actuator is pointing up, and the hexagonal logo of the motor is pointing downwards. Press down the calibration arm to make sure the stand and arm touch tightly. 
+
 ![zero-stop](images/calib-zero.png)
+
+Record the encoder reading in configuration in `ddh/config/ddh_default.yaml`. Perform this calibration for each actuator and record it in their respective keys in the configuration file.
+```yaml
+motors:
+	R0: # and R1, L0, L1:
+		offset: the encoder reading at zero stop
+```
+
+
 
 # Gripper
 
