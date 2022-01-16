@@ -76,13 +76,35 @@ The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptiv
 
 
 
+## Install `pyddh`
+
+`pyddh` is the driver and utilities for this gripper. It will be used throughout the assembly process. You can get the software package from its [GitHub page](https://github.com/HKUST-RML/pyddh).
+
+
+
 
 ## Label Components
 
 
-There are two ways to mount the gripper on the robot arm. They are equivalent as long as you keep it consistent.
+### Label Motors
 
 
+The motors will __not__ be interchangeable later on. Physically label the 4  motors as `R0`, `R1`, `L0`, `L1` respectively. 
+
+### Label ODrive Boards
+
+Two ODrive boards `ODrive_R` and `ODrive_L` will be used to drive the actuators. Physically label each board with its name to avoid confusion. Record their serial number in `pyddh/config/ddh_default.yaml`.  Plug in the ODrive board to the computer and execute the command `odrivetools` in the terminal will show its serial number.
+
+```yaml
+odrive_serial:
+  R: 'Serial Number of ODrive_R'
+  L: 'Serial Number of Odrive_L'
+```
+
+### Label Gripper Orientation
+
+
+Choose one side of the `Actuator Mount` as the up side. Physically label it with the x-y axis arrows.
 
 ![ref_frame](images/ref_frame.png)
 
