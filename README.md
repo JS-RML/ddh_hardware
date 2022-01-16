@@ -184,8 +184,8 @@ Put the motor into zero position as show in the diagram below. The ports of the 
 Record the encoder reading in configuration in `ddh/config/ddh_default.yaml`. Perform this calibration for each actuator and record it in their respective keys in the configuration file.
 ```yaml
 motors:
-	R0: # and R1, L0, L1:
-		offset: the encoder reading at zero stop
+  R0: # and R1, L0, L1:
+    offset: the encoder reading at zero stop
 ```
 
 
