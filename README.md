@@ -12,8 +12,9 @@ The repo contains the hardware design and documentation of our in-house 2-finger
   - [Bill of Materials (BOM)](#bom)
     - [Purchase](#purchase)
     - [3D Printing](#3d-printing)
-    - [Mounting]()
-  - [Label Components]()
+    - [Mounting](#prepare-mounting)
+  - [Install `pyddh`](#install-pyddh)
+  - [Label Components](#label-components)
 - [Actuators](#actuators)
   - [Actuator Assembly ⨉4](#assemble-actuators)
   - [Wiring](#wiring)
@@ -69,13 +70,13 @@ The repo contains the hardware design and documentation of our in-house 2-finger
 
 
 
-
+<a name="prepare-mounting"></a>
 ### Mounting (\*) 
 
 The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptive robot gripper and Universal robhot UR10 (50mm PCD with 4 x M6). You will need to design your own coupler if you use other robot models. 
 
 
-
+<a name="install-pyddh"></a>
 ## Install `pyddh`
 
 `pyddh` is the driver and utilities for this gripper. It will be used throughout the assembly process. You can get the software package from its [GitHub page](https://github.com/HKUST-RML/pyddh).
@@ -84,6 +85,8 @@ The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptiv
 
 
 ## Label Components
+
+To avoid ambiguity during assembly, we need to lable the components with unique identifiers and reference frames.
 
 
 ### Label Motors
