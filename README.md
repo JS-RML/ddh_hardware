@@ -34,6 +34,7 @@ The repo contains the hardware design and documentation of our in-house 2-finger
 
 
 
+
 # Preparation
 
 
@@ -255,3 +256,8 @@ geometry:
   r_max_offset: 1 # r_max = l1 + l2 - r_max_offset
 ```
 
+
+
+# Maintenance
+
+For any technical issues, please contact Pu Xu ([pxuaf@connect.ust.hk](mailto:pxuaf@connect.ust.hk))
