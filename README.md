@@ -31,14 +31,14 @@ The repo contains the hardware design and documentation of our in-house 2-finger
     - [Calibrate Motor Direction](#calibrate-motor-direction)
     - [Calibrate Linkages](#calibrate-linkages)
     - [Configure Gripper Geometry](#configure-gripper-geometry)
-
+- [Getting Started](#getting-started)
 
 
 
 # Preparation
 
-
 <a name="bom"></a>
+
 ## Bill of Materials (BOM)
 
 
@@ -264,6 +264,12 @@ geometry:
   r_min_offset: 0 # r_min = sqrt(l1**2 - l2**2) + r_min_offset
   r_max_offset: 1 # r_max = l1 + l2 - r_max_offset
 ```
+
+
+
+# Getting Started
+
+You have completed the assembly and calibration of the direct-drive gripper. To learn about how to use the gripper, lease proceed to the [pyddh repository](https://github.com/HKUST-RML/pyddh) for tutorials and documation.
 
 
 
