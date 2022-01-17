@@ -27,7 +27,7 @@ The repo contains the hardware design and documentation of our in-house 2-finger
   - [Finger Assembly ⨉2](#finger)
   - [Gripper Assembly](#gripper-assembly)
   - [Mounting](#mounting)
-  - [Gripper Calibration](#configuration-and-calibration)
+  - [Gripper Calibration](#gripper-calibration)
     - [Calibrate Motor Direction](#calibrate-motor-direction)
     - [Calibrate Linkages](#calibrate-linkages)
     - [Configure Gripper Geometry](#configure-gripper-geometry)
