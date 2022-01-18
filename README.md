@@ -1,6 +1,6 @@
-# Direct-Drive Gripper
+# OpenDDH
 
-The repo contains the hardware design and documentation of our in-house 2-finger 4-DoF direct-dirve gripper.
+`OpenDDH` is a open source implementation of the direct-drive hand (DDH) concept in the paper ["Direct Drive Hands: Force-Motion Transparency in Gripper Design"](http://www.roboticsproceedings.org/rss15/p53.pdf). It is a two-finger 4-DoF gripper.
 
 ![ddh](images/ddh.gif)
 
