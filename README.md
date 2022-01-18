@@ -1,6 +1,6 @@
 # OpenDDH
 
-`OpenDDH` is a open source implementation of the direct-drive hand (DDH) concept in the paper ["Direct Drive Hands: Force-Motion Transparency in Gripper Design"](http://www.roboticsproceedings.org/rss15/p53.pdf). It is a two-finger 4-DoF gripper.
+`OpenDDH` is an open source implementation of the direct-drive hand (DDH) concept in the paper ["Direct Drive Hands: Force-Motion Transparency in Gripper Design"](http://www.roboticsproceedings.org/rss15/p53.pdf). It is a two-finger 4-DoF gripper with programmable active compliance.
 
 ![ddh](images/ddh.gif)
 
@@ -12,7 +12,6 @@
   - [Bill of Materials (BOM)](#bom)
     - [Purchase](#purchase)
     - [3D Printing](#3d-printing)
-    - [Mounting](#prepare-mounting)
   - [Install `pyddh`](#install-pyddh)
   - [Label Components](#label-components)
 - [Actuators](#actuators)
@@ -31,6 +30,9 @@
     - [Calibrate Motor Direction](#calibrate-motor-direction)
     - [Calibrate Linkages](#calibrate-linkages)
     - [Configure Gripper Geometry](#configure-gripper-geometry)
+- [Customization](#customization)
+  - [Mounting](#custom-mounting)
+  - [Linkages](#linkages)
 - [Getting Started](#getting-started)
 
 
@@ -53,7 +55,7 @@
 - [14-Core Shielded Cable TRVVSP4](https://detail.tmall.com/item.htm?id=649477061772) ⨉2 meters
 - [MX1.25-6P 150mm Cable](https://item.taobao.com/item.htm?id=607231799768) ⨉4
 - [AMASS Braided 3-Phase 90cm Cable](https://item.taobao.com/item.htm?id=520248392055) ⨉8
-- Mounting Couplers (*)
+- Adapter Plate and Coupling (*)
 - Various Fasteners from M2 to M4
 
 
@@ -72,13 +74,15 @@
 - [Calibration Arm](stl/calibration_arm.STL) ⨉4
 
 
-<a name="prepare-mounting"></a>
-### Mounting (\*) 
 
-The mounting coupler is designed to work with the mounts for Robhotiq 3f Adaptive robot gripper and Universal robhot UR10 (50mm PCD with 4 x M6). You will need to design your own coupler if you use other robot models. 
+_Mounting ⃰_
+
+_The gripper is designed to be interchangeable with [Robotiq 3-Finger Adaptive Robot Gripper](https://robotiq.com/products/3-finger-adaptive-robot-gripper) mounted on a [Universal Robots UR10](https://www.universal-robots.com/products/ur10-robot/)  (50mm PCD with 4 ⨉ M6). If you have the aforementioned robots, please use their adapter plate and coupling. Otherwise, please go to [custom mounting](#custom-mounting) section for instructions._
+
 
 
 <a name="install-pyddh"></a>
+
 ## Install `pyddh`
 
 `pyddh` is the driver and utilities for this gripper. It will be used throughout the assembly process. You can get the software package from its [GitHub page](https://github.com/HKUST-RML/pyddh).
@@ -265,6 +269,16 @@ geometry:
   r_min_offset: 0 # r_min = sqrt(l1**2 - l2**2) + r_min_offset
   r_max_offset: 1 # r_max = l1 + l2 - r_max_offset
 ```
+
+
+# Customization
+
+<a name="custom-mounting"></a>
+
+## Mounting
+
+
+## Linkages
 
 
 
