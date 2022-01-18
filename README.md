@@ -60,15 +60,16 @@
 
 ### 3D Printing 
 
-- Magnet Holder ⨉4
-- Motor Plate ⨉4
-- Proximal Link ⨉4
-- Distal Link ⨉2
-- Distal Tip Link ⨉2
-- Finger Tip ⨉2
-- Actuator Mount ⨉1
-- Coupler ⨉1
-
+- [Magnet Holder](stl/magnet_holder.STL) ⨉4
+- [Motor Plate](stl/motor_plate.STL) ⨉4
+- [Proximal Link](stl/proximal_link.STL) ⨉4
+- [Distal Link](stl/distal_link.STL) ⨉2
+- [Distal Tip Link](stl/distal_tip_link.STL) ⨉2
+- [Finger Tip](stl/finger_tip.STL) ⨉2
+- [Actuator Mount](stl/actuator_mount.STL) ⨉1
+- [Coupler](stl/coupler.STL) ⨉1
+- [Calibration Stand](stl/calibration_stand.STL) ⨉4
+- [Calibration Arm](stl/calibration_arm.STL) ⨉4
 
 
 <a name="prepare-mounting"></a>
