@@ -75,7 +75,7 @@ __OpenDDH__ is an open source implementation of the __direct-drive hand (DDH)__ 
 
 
 
-_Mounting ⃰_
+_Mounting\*_
 
 _The gripper is designed to be interchangeable with [Robotiq 3-Finger Adaptive Robot Gripper](https://robotiq.com/products/3-finger-adaptive-robot-gripper) mounted on a [Universal Robots UR10](https://www.universal-robots.com/products/ur10-robot/)  (50mm PCD with 4 ⨉ M6). If you have the aforementioned robots, please use their adapter plate and coupling. Otherwise, please go to [custom mounting](#custom-mounting) section for instructions._
 
