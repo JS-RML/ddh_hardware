@@ -90,7 +90,7 @@ To facilitate assembly, some parts need to be labeled as follows.
 
 Label the four motors with `R0`, `R1`, `L0`, `L1`, respectively. The motors will __not__ be interchangeable later on.  
 
-### ODrive Boards
+### ODrive
 
 Label the two ODrive boards with `ODrive_R` and `ODrive_L`, respectively. Plug each ODrive board into the computer and execute the command `odrivetools` *Also add how this works in practice in the terminal* in the terminal to check its serial number. Record their serial numbers in `pyddh/config/ddh_default.yaml`. 
 
