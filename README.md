@@ -1,6 +1,6 @@
 # Direct-Drive Hand
 
-In this project, we have implemented a two-fingered 4-DoF direct-drive hand, inspired by the work ["Direct Drive Hands: Force-Motion Transparency in Gripper Design"](http://www.roboticsproceedings.org/rss15/p53.pdf). It is a two-finger 4-DoF gripper with programmable active compliance. This document provides instructions for its procurement, assembly, configuration and customization. 
+In this project, we have implemented a two-fingered 4-DoF direct-drive hand, inspired by the work ["Direct Drive Hands: Force-Motion Transparency in Gripper Design"](http://www.roboticsproceedings.org/rss15/p53.pdf). 
 
 ![ddh](images/ddh.gif)
 
