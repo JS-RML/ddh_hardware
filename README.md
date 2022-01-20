@@ -128,7 +128,7 @@ We now make connections between the motors and the ODrive, both for the encoders
 
 ### Encoder Connection
 
-For the encoder connection, you need to construct a encoder cable accroding the schematics below. This cable is quite tricky to make. Test the connectivity and resistance of each connection afterwards to make sure the cable is soldered properly. It is also recommanded to physically label each connector with its designated identifier.
+For the encoder connection, we fabricate a cable assembly as shown below in the schematic. It is recommended to verify the connectivity and resistance of each connection to make sure the cables are soldered properly. We also recommend to label each connector like the schematic. *Also add a photograph of the cable assembly*
 
 ![drag_cable](images/wiring.png)
 
