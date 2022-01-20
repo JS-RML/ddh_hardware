@@ -132,11 +132,11 @@ For the encoder connection, we fabricate a cable assembly as shown below in the 
 
 ![drag_cable](images/wiring.png)
 
-Plug-in the encoder cable to the corresponding actuators. There is only one corret orientation for the plugs. Connect the other end of the encoder cable to the corresponding ODrive pins.
+After successful fabrication, connect the motor encoders and the ODrives. *Also add a photograph of the cable assembly*
 
 ### Power Connection
 
-For the power connection, connect each actuator to its designeated ODrive axis. 
+For the power connection, the motors are matched with the ODrive axes as follows: 
 
 | Actuator | ODrive | Axis |
 |----|------|-----|
@@ -145,7 +145,7 @@ For the power connection, connect each actuator to its designeated ODrive axis.
 | L0 | ODrive_L | M0 |
 | L1 | ODrive_L | M1 |
 
-Keep the 3-phase connection consistent following the convention shown below.
+Keep the 3-phase connection consistent as shown below.
 
 ![wireing_power](images/wiring-power.png)
 
