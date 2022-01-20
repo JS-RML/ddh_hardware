@@ -77,7 +77,7 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
 
 ## Install `pyddh`
 
-`pyddh` *Rename to ddh-software* is our driver software that provides a user interface to the gripper hardware. Install it according to the [instructions](https://github.com/HKUST-RML/pyddh).
+`pyddh` *Rename to ddh-software* is our driver software that provides a user interface to the gripper hardware. To install, visit [here](https://github.com/HKUST-RML/pyddh).
 
 
 
