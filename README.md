@@ -123,7 +123,7 @@ On one side of the 3D-printed part `Actuator Mount` (to be used as the top side)
 
 ## Wiring
 
-In this step, you need to connect the actuators to the ODrive boards. Each actuator has an encoder port and a 3-phase power port. Both need to be connected.
+We now make connections between the motors and the ODrive, both for the encoders and 3-phase power.
 
 
 ### Encoder Connection
