@@ -100,10 +100,9 @@ odrive_serial:
   L: 'Serial Number of Odrive_L'
 ```
 
-### Label Gripper Orientation
+### Actuator Mount
 
-
-Choose one side of the `Actuator Mount` as the up side. Physically label it with the x-y axis arrows.
+On one side of the `Actuator Mount` (to be used as the top side), mark reference frames as follows.
 
 ![ref_frame](images/ref_frame.png)
 
