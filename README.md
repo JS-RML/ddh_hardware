@@ -200,7 +200,7 @@ motors:
 
 ![gripper](images/gripper.png)
 
-## Mounting
+## Docking on UR10 Arm
 
 ![mounting](images/mounting.png)
 
