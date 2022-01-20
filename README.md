@@ -12,7 +12,7 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
   - [Bill of Materials (BOM)](#bom)
     - [Purchase](#purchase)
     - [3D Printing](#3d-printing)
-  - [Install `pyddh`](#install-pyddh)
+  - [Install `ddh_software`](#install-pyddh)
   - [Label Components](#label-components)
 - [Actuators](#actuators)
   - [Actuator Assembly ⨉4](#assemble-actuators)
@@ -72,12 +72,11 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
 - [Calibration Stand](stl/calibration_stand.STL) ⨉4
 - [Calibration Arm](stl/calibration_arm.STL) ⨉4
 
-
 <a name="install-pyddh"></a>
 
-## Install `pyddh`
+## Install `ddh_software`
 
-`pyddh` *Rename to ddh-software* is our driver software that provides a user interface to the gripper hardware. To install, visit [here](https://github.com/HKUST-RML/pyddh).
+`ddh_software` is our driver software that provides a user interface to the gripper hardware. To install, visit [here](https://github.com/HKUST-RML/ddh_software).
 
 
 
@@ -92,7 +91,7 @@ Label the four motors with `R0`, `R1`, `L0`, `L1`, respectively. The motors will
 
 ### ODrive
 
-Label the two ODrive boards with `ODrive_R` and `ODrive_L`, respectively. Plug each ODrive board into the computer and execute the command `odrivetools` *Also add how this works in practice in the terminal* in the terminal to check its serial number. Record their serial numbers in `pyddh/config/ddh_default.yaml`. 
+Label the two ODrive boards with `ODrive_R` and `ODrive_L` respectively. Record their serial numbers in `ddh_software/config/ddh_default.yaml`. Execute command `odrivetools` in the terninal will display the serial number of the connected ODrive board.
 
 ```yaml
 odrive_serial:
@@ -162,7 +161,7 @@ Keep the 3-phase connection consistent following the convention shown below.
 
 ### Calibrate Encoders
 
-Here we calibrate the zero position of the magnet. Mount the actuator on the calibration stand and install the calibration arm onto the actuator following the diagram
+Here we calibrate the zero position of the magnet. Mount the actuator on the calibration stand and install the calibration arm onto the actuator according to the diagram
 
 ![calibration-stand](images/motor-calib-stand.png)
 
@@ -175,7 +174,7 @@ Put the motor into zero position as show in the diagram below. The ports of the 
 
 ![zero-stop](images/calib-zero.png)
 
-Record the encoder reading in configuration in `ddh/config/ddh_default.yaml`. Perform this calibration for each actuator and record it in their respective keys in the configuration file.
+Record the encoder reading in configuration in `ddh_software/config/ddh_default.yaml`. Perform this calibration for each actuator and record it in their respective keys in the configuration file.
 ```yaml
 motors:
   R0: # and R1, L0, L1:
