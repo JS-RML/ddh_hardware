@@ -1,4 +1,4 @@
-# OpenDDH
+# Direct-Drive Hand
 
 __OpenDDH__ is an open source implementation of the __direct-drive hand (DDH)__ concept in the paper ["Direct Drive Hands: Force-Motion Transparency in Gripper Design"](http://www.roboticsproceedings.org/rss15/p53.pdf). It is a two-finger 4-DoF gripper with programmable active compliance. This document provides instructions for its procurement, assembly, configuration and customization. 
 
