@@ -272,7 +272,7 @@ geometry:
 
 # Getting Started
 
-You have completed the assembly and calibration of the direct-drive gripper. To learn about how to use the gripper, lease proceed to the [pyddh repository](https://github.com/HKUST-RML/pyddh) for tutorials and documation.
+You have completed the assembly and calibration of the direct-drive gripper. To learn about how to use the gripper, lease proceed to the [ddh_software](https://github.com/HKUST-RML/ddh_software) for tutorials and documation.
 
 
 
