@@ -82,19 +82,17 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
 
 
 
-## Label Components
+## Part Labeling
 
-To avoid ambiguity during assembly, we need to lable the components with unique identifiers and reference frames.
+To facilitate assembly, some parts need to be labeled as follows.
 
+### Motors
 
-### Label Motors
+Label the four motors with `R0`, `R1`, `L0`, `L1`, respectively. The motors will __not__ be interchangeable later on.  
 
+### ODrive Boards
 
-The motors will __not__ be interchangeable later on. Physically label the 4  motors as `R0`, `R1`, `L0`, `L1` respectively. 
-
-### Label ODrive Boards
-
-Two ODrive boards `ODrive_R` and `ODrive_L` will be used to drive the actuators. Physically label each board with its name to avoid confusion. Record their serial number in `pyddh/config/ddh_default.yaml`.  Plug in the ODrive board to the computer and execute the command `odrivetools` in the terminal will show its serial number.
+Label the two ODrive boards with `ODrive_R` and `ODrive_L`, respectively. Plug each ODrive board into the computer and execute the command `odrivetools` in the terminal to check its serial number. Record their serial numbers in `pyddh/config/ddh_default.yaml`. 
 
 ```yaml
 odrive_serial:
