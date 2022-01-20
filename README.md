@@ -187,7 +187,7 @@ motors:
 
 <a name="finger"></a>
 
-## Finger Assembly ⨉2
+## Finger Assembly ⨉ 2
 
 ![linkage_joint](images/linkage_joint.png)
 
