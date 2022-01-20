@@ -59,7 +59,6 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
 - Various Fasteners from M2 to M4
 
 
-
 ### 3D Printing 
 
 - [Magnet Holder](stl/magnet_holder.STL) ⨉4
@@ -74,10 +73,7 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
 - [Calibration Arm](stl/calibration_arm.STL) ⨉4
 
 
-
-_Mounting\*_
-
-_The gripper is designed to be interchangeable with [Robotiq 3-Finger Adaptive Robot Gripper](https://robotiq.com/products/3-finger-adaptive-robot-gripper) mounted on a [Universal Robots UR10](https://www.universal-robots.com/products/ur10-robot/)  (50mm PCD with 4 ⨉ M6). If you have the aforementioned robots, please use their adapter plate and coupling. Otherwise, please go to [custom mounting](#custom-mounting) section for instructions._
+(*)_The gripper is primarily designed to be compatible with [Universal Robots UR10](https://www.universal-robots.com/products/ur10-robot/) (50mm PCD with 4 ⨉ M6, used with Robotiq's grippers). For other robot systems, see [custom mounting](#custom-mounting) section for instructions._
 
 
 
