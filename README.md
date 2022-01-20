@@ -112,7 +112,7 @@ On one side of the 3D-printed part `Actuator Mount` (to be used as the top side)
 
 
 <a name="assemble-actuator"></a>
-## Actuator Assembly ⨉4
+## Actuator Assembly ⨉ 4
 
 
 ![motor_with_magnet](images/motor_with_magnet.png)
