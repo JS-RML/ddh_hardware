@@ -145,7 +145,7 @@ For the power connection, the motors are matched with the ODrive axes as follows
 | L0 | ODrive_L | M0 |
 | L1 | ODrive_L | M1 |
 
-Keep the 3-phase connection consistent as shown below.
+Keep the 3-phase connection consistent as shown below. *Also add a photograph of the cable assembly*
 
 ![wireing_power](images/wiring-power.png)
 
