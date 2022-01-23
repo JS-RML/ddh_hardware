@@ -87,7 +87,16 @@ To facilitate assembly, some parts need to be labeled as follows.
 
 ### Motors
 
-Label the four motors with `R0`, `R1`, `L0`, `L1`, respectively. The motors will __not__ be interchangeable later on.  
+Label the four motors with `R0`, `R1`, `L0`, `L1`, respectively. The motors will __not__ be interchangeable later.
+
+
+The __direction of the rotor__ is defined to be the direction the hexagonal logo on the rotor is pointing at.
+
+![rotor-dir](images/rotor_dir.png)
+
+The relative motion of the rotor and stator is at  __zero__ when the rotor is pointing at the opposite direction of the power port on the stator, as shown in the following figure.
+![motor-zero](images/motor_zero.png)
+
 
 ### ODrive
 
@@ -210,7 +219,7 @@ motors:
 
 
 
-## Gripper Calibration
+## Validation
 
 
 
@@ -244,7 +253,14 @@ linkages:
 
 
 
-### Configure Gripper Geometry
+# Customization
+
+<a name="custom-mounting"></a>
+
+## Mounting
+
+
+## Linkages
 
 ![geometry](images/ddh_geometry.png)
 
@@ -259,17 +275,6 @@ geometry:
   r_min_offset: 0 # r_min = sqrt(l1**2 - l2**2) + r_min_offset
   r_max_offset: 1 # r_max = l1 + l2 - r_max_offset
 ```
-
-
-# Customization
-
-<a name="custom-mounting"></a>
-
-## Mounting
-
-
-## Linkages
-
 
 
 # Getting Started
