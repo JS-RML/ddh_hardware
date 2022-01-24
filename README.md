@@ -90,13 +90,6 @@ To facilitate assembly, some parts need to be labeled as follows.
 Label the four motors with `R0`, `R1`, `L0`, `L1`, respectively. The motors will __not__ be interchangeable later.
 
 
-The __direction of the rotor__ is defined to be the direction the hexagonal logo on the rotor is pointing at.
-
-![rotor-dir](images/rotor_dir.png)
-
-The relative motion of the rotor and stator is at  __zero__ when the rotor is pointing at the opposite direction of the power port on the stator, as shown in the following figure.
-![motor-zero](images/motor_zero.png)
-
 
 ### ODrive
 
@@ -160,6 +153,18 @@ Keep the 3-phase connection consistent as shown below. *Also add a photograph of
 
 ![wireing_power](images/wiring-power.png)
 
+## Definitions
+
+Here we provide definition to direction of the rotor and zero position of the motor. 
+
+
+### Direction of the Rotor
+The direction the hexagonal logo on the rotor is pointing at will be referred to as the direction of the rotor. 
+![rotor-dir](images/rotor_dir.png)
+
+### Zero Position of the Motor
+The motor is said to be in the zero position when the direction of the motor is pointing at the opposite direction of the power port on the stator. 
+![motor-zero](images/motor_zero.png)
 
 
 ## Actuator Calibration
@@ -172,25 +177,31 @@ Keep the 3-phase connection consistent as shown below. *Also add a photograph of
 
 ### Calibrate Encoders
 
-Here we calibrate the zero position of the magnet. Mount the actuator on the calibration stand and install the calibration arm onto the actuator according to the diagram
+Here we calibrate the zero position of the motor. Mount the actuator on the calibration stand and install the calibration arm onto the actuator according to the diagram
 
 ![calibration-stand](images/motor-calib-stand.png)
 
 Execute the following command to show real-time reading from the encoders.
 ```shell
-python3 -m pyddh.encoder_printer
+python3 -m pyddh.check_encoder
 ```
 
-Put the motor into zero position as show in the diagram below. The ports of the actuator is pointing up, and the hexagonal logo of the motor is pointing downwards. Press down the calibration arm to make sure the stand and arm touch tightly. 
+Put the motor into zero position as show in the diagram below. Press down the calibration arm to make sure the stand and arm touch tightly. 
 
 ![zero-stop](images/calib-zero.png)
 
-Record the encoder reading in configuration in `ddh_software/config/ddh_default.yaml`. Perform this calibration for each actuator and record it in their respective keys in the configuration file.
+Record the encoder reading in configuration in `ddh_software/config/default.yaml`. Perform this calibration for each actuator and record it in their respective keys in the configuration file.
 ```yaml
 motors:
   R0: # and R1, L0, L1:
     offset: the encoder reading at zero stop
 ```
+
+After modifying the configuration file, execute the following command will show the real-time reading of the motor angular position in degrees.
+```shell
+python3 -m pyddh.check_motor_pos
+```
+It should be zero when motor is in [zero position](#zero-position-of-the-motor). Also try 90° and 180°. Don't mind the sign at this stage of assembly.
 
 
 
