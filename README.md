@@ -151,6 +151,8 @@ Keep the 3-phase connection consistent as shown below. *Also add a photograph of
 
 ![wireing_power](images/wiring-power.png)
 
+![power-connection](images/power_connection.png)
+
 ## Definitions
 
 Here we provide definition of the direction of the rotor and zero position of the motor. 
