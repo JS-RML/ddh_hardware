@@ -153,7 +153,7 @@ Keep the 3-phase connection consistent as shown below. *Also add a photograph of
 
 ## Definitions
 
-Here we provide definition to direction of the rotor and zero position of the motor. 
+Here we provide definition of the direction of the rotor and zero position of the motor. 
 
 
 ### Direction of the Rotor
@@ -243,6 +243,13 @@ First check are the linkages and actuators installed in their correct order. The
 ![various-angles](images/various_angles.png)
 
 
+
+# Getting Started
+
+You have completed the assembly and calibration of the direct-drive gripper. To learn about how to use the gripper, lease proceed to the [ddh_software](https://github.com/HKUST-RML/ddh_software) for tutorials and documation.
+
+
+
 # Customization
 
 <a name="custom-mounting"></a>
@@ -265,11 +272,6 @@ geometry:
   r_min_offset: 0 # r_min = sqrt(l1**2 - l2**2) + r_min_offset
   r_max_offset: 1 # r_max = l1 + l2 - r_max_offset
 ```
-
-
-# Getting Started
-
-You have completed the assembly and calibration of the direct-drive gripper. To learn about how to use the gripper, lease proceed to the [ddh_software](https://github.com/HKUST-RML/ddh_software) for tutorials and documation.
 
 
 
