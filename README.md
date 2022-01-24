@@ -222,34 +222,8 @@ motors:
 ## Validation
 
 
-
-### Calibrate Motor Direction
-
-The following values in the configuration will be calibrated in this step
-
-- `/motors/R0/dir`
-- `/motors/R1/dir`
-- `/motors/L0/dir`
-- `/motors/L1/dir`
-
-
-
-### Calibrate Linkages
-
-The following values in the configuration will be calibrated in this step
-
-- `/linkages/R0`
-- `/linkages/R1`
-- `/linkages/L0`
-- `/linkages/L1`
-
-```yaml
-linkages:
-  R0: -45
-  R1: 45
-  L0: 45
-  L1: -45
-```
+First check are the linkages and actuators installed in their correct order. The association betwen proximal links and actuators should follow the diagram below __exactly__. If there is a mismatch, please go back to the assembly steps and correct the mistakes.
+![linkage_ids](images/linkage_ids.png)
 
 
 
