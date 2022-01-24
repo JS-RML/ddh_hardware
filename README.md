@@ -112,7 +112,7 @@ odrive_serial:
 
 On one side of the 3D-printed part `Actuator Mount` (to be used as the top side), mark reference frames as follows.
 
-![ref_frame](images/ref_frame.png)
+![ref_frame](images/gripper_profile.png)
 
 
 
