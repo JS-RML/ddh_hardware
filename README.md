@@ -227,6 +227,9 @@ First check are the linkages and actuators installed in their correct order. The
 
 
 
+![various-angles](images/various_angles.png)
+
+
 # Customization
 
 <a name="custom-mounting"></a>
