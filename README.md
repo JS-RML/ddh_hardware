@@ -89,8 +89,6 @@ To facilitate assembly, some parts need to be labeled as follows.
 
 Label the four motors with `R0`, `R1`, `L0`, `L1`, respectively. The motors will __not__ be interchangeable later.
 
-
-
 ### ODrive
 
 Label the two ODrive boards with `ODrive_R` and `ODrive_L` respectively. Record their serial numbers in `ddh_software/config/ddh_default.yaml`. Execute command `odrivetools` in the terninal will display the serial number of the connected ODrive board.
@@ -169,13 +167,17 @@ The motor is said to be in the zero position when the direction of the motor is 
 
 ## Actuator Calibration
 
-
+Each actuator module require calibration before use. This step __can not__ be done after the gripper is assembled, so do not postpone this step.
 
 ### Calibrate ODrives
 
+Execute the following command and follow its instructions in the terminal.
 
+```shell
+python3 -m pyddh.calib_odrive
+```
 
-### Calibrate Encoders
+### Calibrate Zero Position
 
 Here we calibrate the zero position of the motor. Mount the actuator on the calibration stand and install the calibration arm onto the actuator according to the diagram
 
