@@ -109,6 +109,7 @@ On one side of the 3D-printed part `Actuator Mount` (to be used as the top side)
 
 # Actuators
 
+Actuator = BLDC Motor + Maget + Encoder + Drive Board
 
 <a name="assemble-actuator"></a>
 ## Actuator Assembly ⨉ 4
@@ -240,9 +241,13 @@ It should be zero when motor is in [zero position](#zero-position-of-the-motor).
 First check are the linkages and actuators installed in their correct order. The association betwen proximal links and actuators should follow the diagram below __exactly__. If there is a mismatch, please go back to the assembly steps and correct the mistakes.
 ![linkage_ids](images/linkage_ids.png)
 
-
-
+Execute the following command to print real-time reading for the linkage angular positions.
+```shell
+python3 -m pyddh.check_theta
+```
+Correct values should be its counter-clockwise angle with the x-axis. The following figure shows the angle of R0 link at 3 different angles. Make sure __all 4 linkage angles__ are correct.
 ![various-angles](images/various_angles.png)
+If everything checked out at this point, you have successfully built and calibrated the direct-drive gripper.
 
 
 
