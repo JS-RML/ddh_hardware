@@ -12,7 +12,7 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
   - [Bill of Materials (BOM)](#bom)
     - [Purchase](#purchase)
     - [3D Printing](#3d-printing)
-  - [Install `ddh_software`](#install-pyddh)
+  - [Install `ddh_driver`](#install-ddh-driver)
   - [Label Components](#label-components)
 - [Actuators](#actuators)
   - [Actuator Assembly ⨉4](#assemble-actuators)
@@ -26,10 +26,7 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
   - [Finger Assembly ⨉2](#finger)
   - [Gripper Assembly](#gripper-assembly)
   - [Mounting](#mounting)
-  - [Gripper Calibration](#gripper-calibration)
-    - [Calibrate Motor Direction](#calibrate-motor-direction)
-    - [Calibrate Linkages](#calibrate-linkages)
-    - [Configure Gripper Geometry](#configure-gripper-geometry)
+  - [Validation](#validation)
 - [Customization](#customization)
   - [Mounting](#custom-mounting)
   - [Linkages](#linkages)
@@ -59,6 +56,8 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
 - Various Fasteners from M2 to M4
 
 
+
+
 ### 3D Printing 
 
 - [Magnet Holder](stl/magnet_holder.STL) ⨉4
@@ -67,16 +66,16 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
 - [Distal Link](stl/distal_link.STL) ⨉2
 - [Distal Tip Link](stl/distal_tip_link.STL) ⨉2
 - [Finger Tip](stl/finger_tip.STL) ⨉2
-- [Actuator Mount](stl/actuator_mount.STL) ⨉1
+- [Gripper Shell](stl/gripper_shell.STL) ⨉1
 - [Coupler](stl/coupler.STL) ⨉1
 - [Calibration Stand](stl/calibration_stand.STL) ⨉4
 - [Calibration Arm](stl/calibration_arm.STL) ⨉4
 
-<a name="install-pyddh"></a>
+<a name="install-ddh-driver"></a>
 
-## Install `ddh_software`
+## Install `ddh_driver`
 
-`ddh_software` is our driver software that provides a user interface to the gripper hardware. To install, visit [here](https://github.com/HKUST-RML/ddh_software).
+`ddh_driver` is our driver software that provides a user interface to the gripper hardware. To install, visit [here](https://github.com/HKUST-RML/ddh_driver).
 
 
 
@@ -91,7 +90,7 @@ Label the four motors with `R0`, `R1`, `L0`, `L1`, respectively. The motors will
 
 ### ODrive
 
-Label the two ODrive boards with `ODrive_R` and `ODrive_L` respectively. Record their serial numbers in `ddh_software/config/ddh_default.yaml`. Execute command `odrivetools` in the terninal will display the serial number of the connected ODrive board.
+Label the two ODrive boards with `ODrive_R` and `ODrive_L` respectively. Record their serial numbers in `ddh_driver/config/ddh_default.yaml`. Execute command `odrivetools` in the terninal will display the serial number of the connected ODrive board.
 
 ```yaml
 odrive_serial:
@@ -99,9 +98,9 @@ odrive_serial:
   L: 'Serial Number of Odrive_L'
 ```
 
-### Actuator Mount
+### Gripper Shell
 
-On one side of the 3D-printed part `Actuator Mount` (to be used as the top side), mark reference frames as follows.
+On one side of the 3D-printed part `Gripper Shell` (to be used as the top side), mark reference frames as follows.
 
 ![ref_frame](images/gripper_profile.png)
 
@@ -177,7 +176,7 @@ Each actuator module require calibration before use. This step __can not__ be do
 Execute the following command and follow its instructions in the terminal.
 
 ```shell
-python3 -m pyddh.calib_odrive
+python3 -m ddh_driver.calib_odrive
 ```
 
 ### Calibrate Zero Position
@@ -188,14 +187,14 @@ Here we calibrate the zero position of the motor. Mount the actuator on the cali
 
 Execute the following command to show real-time reading from the encoders.
 ```shell
-python3 -m pyddh.check_encoder
+python3 -m ddh_driver.check_encoder
 ```
 
 Put the motor into zero position as show in the diagram below. Press down the calibration arm to make sure the stand and arm touch tightly. 
 
 ![zero-stop](images/calib-zero.png)
 
-Record the encoder reading in configuration in `ddh_software/config/default.yaml`. Perform this calibration for each actuator and record it in their respective keys in the configuration file.
+Record the encoder reading in configuration in `ddh_driver/config/default.yaml`. Perform this calibration for each actuator and record it in their respective keys in the configuration file.
 ```yaml
 motors:
   R0: # and R1, L0, L1:
@@ -204,7 +203,7 @@ motors:
 
 After modifying the configuration file, execute the following command will show the real-time reading of the motor angular position in degrees.
 ```shell
-python3 -m pyddh.check_motor_pos
+python3 -m ddh_driver.check_motor_pos
 ```
 It should be zero when motor is in [zero position](#zero-position-of-the-motor). Also try 90° and 180°. Don't mind the sign at this stage of assembly.
 
@@ -227,7 +226,7 @@ It should be zero when motor is in [zero position](#zero-position-of-the-motor).
 
 ![gripper](images/gripper.png)
 
-## Docking on UR10 Arm
+## Mounting
 
 ![mounting](images/mounting.png)
 
@@ -243,7 +242,7 @@ First check are the linkages and actuators installed in their correct order. The
 
 Execute the following command to print real-time reading for the linkage angular positions.
 ```shell
-python3 -m pyddh.check_theta
+python3 -m ddh_driver.check_theta
 ```
 Correct values should be its counter-clockwise angle with the x-axis. The following figure shows the angle of R0 link at 3 different angles. Make sure __all 4 linkage angles__ are correct.
 ![various-angles](images/various_angles.png)
@@ -253,7 +252,7 @@ If everything checked out at this point, you have successfully built and calibra
 
 # Getting Started
 
-You have completed the assembly and calibration of the direct-drive gripper. To learn about how to use the gripper, lease proceed to the [ddh_software](https://github.com/HKUST-RML/ddh_software) for tutorials and documation.
+You have completed the assembly and calibration of the direct-drive gripper. To learn about how to use the gripper, lease proceed to the [ddh_driver](https://github.com/HKUST-RML/ddh_driver) for tutorials and documation.
 
 
 
