@@ -161,11 +161,11 @@ Here we provide definition of the direction of the rotor and zero position of th
 
 ### Direction of the Rotor
 The direction the hexagonal logo on the rotor is pointing at will be referred to as the direction of the rotor. 
-![rotor-dir](images/rotor_dir.png)
 
 ### Zero Position of the Motor
 The motor is said to be in the zero position when the direction of the motor is pointing at the opposite direction of the power port on the stator. 
-![motor-zero](images/motor_zero.png)
+
+![motor-zero](images/motor_frame.png)
 
 
 ## Actuator Calibration
@@ -237,9 +237,8 @@ It should be zero when motor is in [zero position](#zero-position-of-the-motor).
 
 ## Validation
 
-
 First check are the linkages and actuators installed in their correct order. The association betwen proximal links and actuators should follow the diagram below __exactly__. If there is a mismatch, please go back to the assembly steps and correct the mistakes.
-![linkage_ids](images/linkage_ids.png)
+<img src="images/linkage_ids.png" alt="linkage_ids" style="zoom: 20%;" />
 
 Execute the following command to print real-time reading for the linkage angular positions.
 ```shell
