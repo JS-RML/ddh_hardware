@@ -13,7 +13,7 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
     - [Purchase](#purchase)
     - [3D Printing](#3d-printing)
   - [Install `ddh_driver`](#install-ddh-driver)
-  - [Label Components](#label-components)
+  - [Part Labeling](#part-labeling)
 - [Actuators](#actuators)
   - [Actuator Assembly ⨉4](#assemble-actuators)
   - [Wiring](#wiring)
