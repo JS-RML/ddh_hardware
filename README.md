@@ -238,7 +238,8 @@ It should be zero when motor is in [zero position](#zero-position-of-the-motor).
 ## Validation
 
 First check are the linkages and actuators installed in their correct order. The association betwen proximal links and actuators should follow the diagram below __exactly__. If there is a mismatch, please go back to the assembly steps and correct the mistakes.
-<img src="images/linkage_ids.png" alt="linkage_ids" style="zoom: 20%;" />
+
+![linkage_ids](images/linkage_ids.png)
 
 Execute the following command to print real-time reading for the linkage angular positions.
 ```shell
