@@ -123,8 +123,9 @@ Actuator = BLDC Motor + Maget + Encoder + Drive Board
 
 ## Wiring
 
-We now make connections between the motors and the ODrive, both for the encoders and 3-phase power.
+The components should be connected following the diagram below. The encoder connection (black) and power connection (green) will be further elaborated.
 
+![connection](images/connection.png)
 
 ### Encoder Connection
 
@@ -153,23 +154,15 @@ Keep the 3-phase connection consistent as shown below. *Also add a photograph of
 
 ![power-connection](images/power_connection.png)
 
-## Definitions
-
-Here we provide definition of the direction of the rotor and zero position of the motor. 
-
-
-### Direction of the Rotor
-The direction the hexagonal logo on the rotor is pointing at will be referred to as the direction of the rotor. 
-
-### Zero Position of the Motor
-The motor is said to be in the zero position when the direction of the motor is pointing at the opposite direction of the power port on the stator. 
-
-![motor-zero](images/motor_frame.png)
-
 
 ## Actuator Calibration
 
 Each actuator module require calibration before use. This step __can not__ be done after the gripper is assembled, so do not postpone this step.
+
+We explitely define the `direction of the rotor` to be the direction the hexagonal logo on the rotor is pointing at, and the `zero position of the motor` to be when the direction of the motor is pointing at the opposite direction of the power port on the stator. 
+
+![motor-zero](images/motor_frame.png)
+
 
 ### Calibrate ODrives
 
