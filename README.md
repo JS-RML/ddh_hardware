@@ -90,7 +90,9 @@ Label the four motors with `R0`, `R1`, `L0`, `L1`, respectively. The motors will
 
 ### ODrive
 
-Label the two ODrive boards with `ODrive_R` and `ODrive_L` respectively. Record their serial numbers in `ddh_driver/config/ddh_default.yaml`. Execute command `odrivetools` in the terninal will display the serial number of the connected ODrive board.
+Label the two ODrive boards with `ODrive_R` and `ODrive_L` respectively. Record their serial numbers in `ddh_driver/config/ddh_default.yaml`. You can check the serial number using `odrivetools` in the terninal.
+
+![sn](images/sn.png)
 
 ```yaml
 odrive_serial:
