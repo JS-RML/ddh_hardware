@@ -90,7 +90,7 @@ Label the four motors with `R0`, `R1`, `L0`, `L1`, respectively. The motors will
 
 ### ODrive
 
-Label the two ODrive boards with `ODrive_R` and `ODrive_L` respectively. Record their serial numbers in `ddh_driver/config/ddh_default.yaml`. You can check the serial number using `odrivetools` in the terninal.
+Label the two ODrive boards with `ODrive_R` and `ODrive_L` respectively. Record their serial numbers in `ddh_driver/config/ddh_default.yaml`. You can check the serial number using `odrivetool` in the terminal.
 
 ![sn](images/sn.png)
 
@@ -110,7 +110,7 @@ On one side of the 3D-printed part `Gripper Shell` (to be used as the top side),
 
 # Actuators
 
-Actuator = BLDC Motor + Maget + Encoder + Drive Board
+Actuator = BLDC Motor + Magnet + Encoder + Drive Board
 
 <a name="assemble-actuator"></a>
 ## Actuator Assembly ⨉ 4
@@ -161,7 +161,7 @@ Keep the 3-phase connection consistent as shown below. *Also add a photograph of
 
 Each actuator module require calibration before use. This step __can not__ be done after the gripper is assembled, so do not postpone this step.
 
-We explitely define the `direction of the rotor` to be the direction the hexagonal logo on the rotor is pointing at, and the `zero position of the motor` to be when the direction of the motor is pointing at the opposite direction of the power port on the stator. 
+We explicitly define the `direction of the rotor` to be the direction the hexagonal logo on the rotor is pointing at, and the `zero position of the motor` to be when the direction of the motor is pointing at the opposite direction of the power port on the stator. 
 
 ![motor-zero](images/motor_frame.png)
 
@@ -231,7 +231,7 @@ It should be zero when motor is in [zero position](#zero-position-of-the-motor).
 
 ## Validation
 
-First check are the linkages and actuators installed in their correct order. The association betwen proximal links and actuators should follow the diagram below __exactly__. If there is a mismatch, please go back to the assembly steps and correct the mistakes.
+First check are the linkages and actuators installed in their correct order. The association between proximal links and actuators should follow the diagram below __exactly__. If there is a mismatch, please go back to the assembly steps and correct the mistakes.
 
 ![linkage_ids](images/linkage_ids.png)
 
@@ -247,7 +247,7 @@ If everything checked out at this point, you have successfully built and calibra
 
 # Getting Started
 
-You have completed the assembly and calibration of the direct-drive gripper. To learn about how to use the gripper, lease proceed to the [ddh_driver](https://github.com/HKUST-RML/ddh_driver) for tutorials and documation.
+You have completed the assembly and calibration of the direct-drive gripper. To learn about how to use the gripper, lease proceed to the [ddh_driver](https://github.com/HKUST-RML/ddh_driver) for tutorials and documentation.
 
 
 
