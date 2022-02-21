@@ -129,6 +129,10 @@ The components should be connected following the diagram below. The encoder conn
 
 ![connection](images/connection.png)
 
+![connection_real](images/connection_photo.png)
+
+
+
 ### Encoder Connection
 
 For the encoder connection, we fabricate a cable assembly as shown below in the schematic. It is recommended to verify the connectivity and resistance of each connection to make sure the cables are soldered properly. We also recommend to label each connector like the schematic.
@@ -153,6 +157,8 @@ For the power connection, the motors are matched with the ODrive axes as follows
 Keep the 3-phase connection consistent as shown below. *Also add a photograph of the cable assembly*
 
 ![wireing_power](images/wiring-power.png)
+
+
 
 ![power-connection](images/power_connection.png)
 
