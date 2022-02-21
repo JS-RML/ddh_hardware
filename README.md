@@ -133,7 +133,7 @@ The components should be connected following the diagram below. The encoder conn
 
 ### Power Supply
 
-First connect the DC power supply to the wall plug. The __brown__, __blue__, and __yellow__ wires correspond to __L__, __N__ and __Ground__ ports on the power supply. Then connect the two ODrive boards, positive to positive, negative to negative. There is no on/off button, plug in the wall plug to turn the system on, unplug to turn it off. Power it on does not arm the motors.
+First connect the DC power supply to the wall plug. The __brown__, __blue__, and __yellow__ wires correspond to __L__, __N__ and __Ground__ ports on the power supply. Then connect it to the two ODrive boards, positive to positive, negative to negative. There is no on/off button, plug in the wall plug to turn the system on, unplug to turn it off. Power it on does not arm the motors.
 
 ### Encoder Connection
 
