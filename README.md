@@ -261,6 +261,8 @@ You have completed the assembly and calibration of the direct-drive gripper. To 
 
 # Customization
 
+If the default setup does not satisfy your requirements, it can be further customized.
+
 <a name="custom-mounting"></a>
 
 ## Mounting
@@ -285,7 +287,9 @@ The geometrical parameters can be customized. After you design your custom parts
 
 ## Fingertip
 
+The fingertip is designed to be swappable. It is attached to the distal link, shown in the schematic below. The default fingertip has a sharp tip for scooping thin objects. Customize the fingertip for your specific scenario. Beware that ℓ₃ and 𝝱 change with the fingertip geometry, make sure to update them in the configuration file.
 
+![fingertip](images/fingertip.png)
 
 
 # Maintenance
