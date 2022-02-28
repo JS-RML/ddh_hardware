@@ -90,7 +90,7 @@ Label the four motors with `R0`, `R1`, `L0`, `L1`, respectively. The motors will
 
 ### ODrive
 
-Label the two ODrive boards with `ODrive_R` and `ODrive_L` respectively. Record their serial numbers in `ddh_driver/config/ddh_default.yaml`. You can check the serial number using `odrivetool` in the terminal.
+Label the two ODrive boards with `ODrive_R` and `ODrive_L` respectively. Record their serial numbers in `ddh_driver/config/default.yaml`. You can check the serial number using `odrivetool` in the terminal.
 
 ![sn](images/sn.png)
 
@@ -266,21 +266,22 @@ You have completed the assembly and calibration of the direct-drive gripper. To 
 ## Mounting
 
 
-## Linkages
+## Geometry
 
-![geometry](images/ddh_geometry.png)
+![geometry](images/gripper_spec.png)
 
-```yaml
-geometry:
-  l1: 50 # length of proximal links
-  l2: 35 # length of distal links
-  beta: 150 # angle from l2 to finger surface 
-  l3: 80.04 # distance from distal joint to fingertip
-  gamma: 160.66 # angle from l2 to fingertip
-  # r: distance of distal joint to motor
-  r_min_offset: 0 # r_min = sqrt(l1**2 - l2**2) + r_min_offset
-  r_max_offset: 1 # r_max = l1 + l2 - r_max_offset
-```
+The geometrical parameters can be customized. After you design your custom parts, update the `ddh_driver/config/default.yaml` so the driver can work properly. 
+
+| Parameter | Config | Unit |
+|----|------|-----|
+| ℓ₁ | `/geometry/l1` | mm |
+| ℓ₂ | `/geometry/l2` | mm |
+| ℓ₃ | `/geometry/l3` | mm |
+| 𝝱 | `/geometry/beta` | degree |
+| 𝛄 | `/geometry/gamma` | degree |
+
+## Fingertip
+
 
 
 
