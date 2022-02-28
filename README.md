@@ -265,6 +265,9 @@ You have completed the assembly and calibration of the direct-drive gripper. To 
 
 ## Mounting
 
+If the default mounting does not work for you, it's very easy to make a custom mount. The gripper has a __60 mm PCD with 4 ⨉ M4__ mounting interface, as shown in the drawing below.
+
+![base_mount](images/base_mount.png)
 
 ## Geometry
 
