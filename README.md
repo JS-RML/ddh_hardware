@@ -272,7 +272,7 @@ You have completed the assembly and calibration of the direct-drive gripper. To 
 
 The geometrical parameters can be customized. After you design your custom parts, update the `ddh_driver/config/default.yaml` so the driver can work properly. 
 
-| Parameter | Config | Unit |
+| Parameter | Configuration Path | Unit |
 |----|------|-----|
 | ℓ₁ | `/geometry/l1` | mm |
 | ℓ₂ | `/geometry/l2` | mm |
