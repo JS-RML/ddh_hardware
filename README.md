@@ -239,15 +239,17 @@ It should be zero when motor is in [zero position](#zero-position-of-the-motor).
 
 ## Validation
 
-First check are the linkages and actuators installed in their correct order. The association between proximal links and actuators should follow the diagram below __exactly__. If there is a mismatch, please go back to the assembly steps and correct the mistakes.
+The gripper assembly is complete. Please perform the following validation steps to make sure the linkages and actuators are installed correctly.
+
+First check the association between proximal links and actuators. They should follow the diagram below __exactly__. If there is a mismatch, please go back to the assembly steps and correct the mistakes.
 
 ![linkage_ids](images/linkage_ids.png)
 
-Execute the following command to print real-time reading for the linkage angular positions.
+Then check the angular position of the four proximal links. This value will be referred to as θ, with subscript indicating which link.  Execute the following command to print real-time reading of θ
 ```shell
 python3 -m ddh_driver.check_theta
 ```
-Correct values should be its counter-clockwise angle with the x-axis. The following figure shows the angle of R0 link at 3 different angles. Make sure __all 4 linkage angles__ are correct.
+It should be the angle between the link and the x-axis, in counter-clockwise direction. For example, the following figure shows the angle of R0 link at -40°, 0°,  and 90°.
 ![various-angles](images/various_angles.png)
 If everything checked out at this point, you have successfully built and calibrated the direct-drive gripper.
 
