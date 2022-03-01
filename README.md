@@ -80,9 +80,9 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
 
 
 
-## Part Labeling
+## Labeling Parts
 
-To facilitate assembly, some parts need to be labeled as follows.
+Labeling parts can facilitate assembly.
 
 ### Motors
 
