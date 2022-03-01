@@ -294,7 +294,7 @@ The fingertip is designed to be swappable. It is attached to the distal link, sh
 
 # Getting Started
 
-You have completed the assembly and calibration of the direct-drive gripper. To learn about how to use the gripper, lease proceed to the [ddh_driver](https://github.com/HKUST-RML/ddh_driver) for tutorials and documentation.
+You have completed the assembly and calibration of the direct-drive gripper. To learn about how to use the gripper, please proceed to the [ddh_driver](https://github.com/HKUST-RML/ddh_driver) for tutorials and documentation.
 
 
 
