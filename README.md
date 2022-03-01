@@ -42,7 +42,7 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
 
 ## Bill of Materials (BOM)
 
-
+<a name="purchase"></a>
 
 ### Off-the-Shelf Parts
 
