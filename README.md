@@ -114,7 +114,7 @@ On one side of the 3D-printed part `Gripper Shell` (to be used as the top side),
 
 Actuator = BLDC Motor + Magnet + Encoder + Drive Board
 
-<a name="assemble-actuator"></a>
+<a name="assemble-actuators"></a>
 ## Actuator Assembly ⨉ 4
 
 
