@@ -42,7 +42,7 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
 
 
 
-### Purchase
+### Off-the-Shelf Parts
 
 - [ODrive 3.6-56V](https://odriverobotics.com/shop/odrive-v36) ⨉2
 - [T-Motor GB54-2](https://store.tmotor.com/goods.php?id=445) ⨉4
