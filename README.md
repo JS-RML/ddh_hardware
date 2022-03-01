@@ -10,7 +10,7 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
 
 - [Preparation](#preparation)
   - [Bill of Materials (BOM)](#bom)
-    - [Purchase](#purchase)
+    - [Off-the-Shelf Parts](#purchase)
     - [3D Printing](#3d-printing)
   - [Install `ddh_driver`](#install-ddh-driver)
   - [Labeling Parts](#labeling-parts)
@@ -44,7 +44,7 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
 
 
 
-### Purchase
+### Off-the-Shelf Parts
 
 - [ODrive 3.6-56V](https://odriverobotics.com/shop/odrive-v36) ⨉2
 - [T-Motor GB54-2](https://store.tmotor.com/goods.php?id=445) ⨉4
@@ -82,9 +82,9 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
 
 
 
-## Part Labeling
+## Labeling Parts
 
-To facilitate assembly, some parts need to be labeled as follows.
+Labeling parts can facilitate assembly.
 
 ### Motors
 
