@@ -13,23 +13,25 @@ In this project, we have implemented a two-fingered 4-DoF direct-drive hand, ins
     - [Purchase](#purchase)
     - [3D Printing](#3d-printing)
   - [Install `ddh_driver`](#install-ddh-driver)
-  - [Part Labeling](#part-labeling)
+  - [Labeling Parts](#labeling-parts)
 - [Actuators](#actuators)
   - [Actuator Assembly ⨉4](#assemble-actuators)
   - [Wiring](#wiring)
+    - [Power Supply](#power-supply)
     - [Encoder Connection](#encoder-connection)
     - [Power Connection](#power-connection)
   - [Actuator Calibration](#actuator-calibration)
     - [Calibrate ODrives](#calibrate-odrives)
-    - [Calibrate Encoders](#calibrate-encoders)
+    - [Calibrate Zero Position](#calibrate-zero-position)
 - [Gripper](#Gripper)
   - [Finger Assembly ⨉2](#finger)
   - [Gripper Assembly](#gripper-assembly)
-  - [Mounting](#mounting)
+  - [Mounting](#mounting-ur10)
   - [Validation](#validation)
 - [Customization](#customization)
   - [Mounting](#custom-mounting)
-  - [Linkages](#linkages)
+  - [Geometry](#geometry)
+  - [Fingertip](#fingertip)
 - [Getting Started](#getting-started)
 
 
@@ -229,6 +231,8 @@ It should be zero when motor is in [zero position](#zero-position-of-the-motor).
 
 ![gripper](images/gripper.png)
 
+<a name="mounting-ur10"></a>
+
 ## Mounting
 
 ![mounting](images/mounting.png)
@@ -252,12 +256,6 @@ python3 -m ddh_driver.check_theta
 It should be the angle between the link and the x-axis, in counter-clockwise direction. For example, the following figure shows the angle of R0 link at -40°, 0°,  and 90°.
 ![various-angles](images/various_angles.png)
 If everything checked out at this point, you have successfully built and calibrated the direct-drive gripper.
-
-
-
-# Getting Started
-
-You have completed the assembly and calibration of the direct-drive gripper. To learn about how to use the gripper, lease proceed to the [ddh_driver](https://github.com/HKUST-RML/ddh_driver) for tutorials and documentation.
 
 
 
@@ -292,6 +290,13 @@ The geometrical parameters can be customized. After you design your custom parts
 The fingertip is designed to be swappable. It is attached to the distal link, shown in the schematic below. The default fingertip has a sharp tip for scooping thin objects. Customize the fingertip for your specific scenario. Beware that ℓ₃ and 𝝱 change with the fingertip geometry, make sure to update them in the configuration file.
 
 ![fingertip](images/fingertip.png)
+
+
+# Getting Started
+
+You have completed the assembly and calibration of the direct-drive gripper. To learn about how to use the gripper, lease proceed to the [ddh_driver](https://github.com/HKUST-RML/ddh_driver) for tutorials and documentation.
+
+
 
 
 # Maintenance
